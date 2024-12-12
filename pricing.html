@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>pricing</title>
+</head>
+
+<body>
+
+    <!--navbar section-->
+    <div class="container navbar-container" style="border-bottom: 2px solid var(--line);">
+    
+        <div class="wrapper">
+            <div class="navbar-section">
+                <div class="navbar-logo">
+                    <a href="/index.html"><img src="assets/home/main-logo.png" alt="logo" width="127px" height="auto"></a>
+    
+                </div>
+                <div class="navbar-menu">
+                    <a href="/products.html">Products</a>
+                    <a href="/resources.html">Resources</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/about.html">About Us</a>
+                </div>
+                <div class="navbar-btn">
+                    <a href="#" class="primary-btn">START FREE TRIAL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mobile-navbar-container">
+    
+        <div class="wrapper" style="padding-inline: 0px;">
+            <div class="mobile-navbar-section">
+                <div class="mobile-navbar-header">
+                    <a href="/index.html"><img src="assets/home/main-logo.png" alt="logo" width="127px" height="auto"></a>
+    
+                    <div class="mobile-menu-controls">
+                        <i class="fa-solid fa-bars" id="open-btn" onclick="toggleMenuOn()"></i>
+                        <i class="fa-solid fa-x control-hidden" id="close-btn" onclick="toggleMenuOff()"></i>
+                    </div>
+    
+                </div>
+                <div class="mobile-navbar-menu" id="mobile-menu">
+                    <a href="/products.html">Products</a>
+                    <a href="/resources.html">Resources</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/about.html">About Us</a>
+                    <a href="#" class="primary-btn">START FREE TRIAL</a>
+                </div>
+    
+    
+    
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------product pricing section------>
+    <div class="container" style="position: relative;">
+        <img src="/assets/pricing/head-circle.png" alt="" class="pricing-head-circle">
+        <div class="wrapper">
+            <div class="product-pricing-section pricing-section">
+                <h5 class="poppins skyblue semibold font16 ">PRICING</h5>
+                <p class="font20 grey poppins">Ready to Become a Tax Planning Hero in Just Minutes?</p>
+                <h2 class="font48 semibold textcenter">Pricing Plans for Every Tax Planner’s Budget</h2>
+                <div class="product-pricing-toggle">
+                    <p class="font16 semibold poppins opacity80 grey active-billing" id="monthly-billing"
+                        onclick="toggleMonthly()">Monthly
+                        billing</p>
+                    <p class="font16 semibold poppins grey opacity80" id="yearly-billing" onclick="toggleYearly()">
+                        Annual (Save 15%!)</p>
+                </div>
+                <p class="poppins grey medium font14" style="margin-top: -1rem">No Contracts | Cancel Anytime</p>
+                <div class="product-pricing-cards-container">
+                    <div class="product-essentials-card">
+                        <div class="product-essentials-heading">
+                            <img src="/assets/products/essentials.png" alt="">
+                            <p class="poppins bold font24">Essentials</p>
+                        </div>
+                        <p class="poppins bold font44" id="essential-price">$150<span class="poppins grey font16 normal"
+                                id="essential-time">/month</span></p>
+                        <p class="font16 poppins grey">Ideal for those who are new to tax planning or prefer a
+                            pay-as-you-go
+                            model.</p>
+                        <a href="#" class="primary-btn">GET STARTED</a>
+                        <div class="more-features-box">
+                            <h3>Features Included:</h3>
+                            <div class="more-features">
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>100+ CPA-Selected Tax Strategies</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Tax Strategy Resource Library</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>All-In-One Resource Access:</p>
+
+                                </div>
+                                <ul>
+                                    <li>Templates</li>
+                                    <li>Videos</li>
+                                    <li>Exclusive Vendor Discounts</li>
+                                </ul>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Live Weekly Tax Labs</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Custom White-Labeled Reports</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Real-Time Tax Savings Dashboard</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Monthly Industry Newsletter + Updates</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Monthly Industry Newsletter + Updates</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Multi-Channel Support:</p>
+                                </div>
+                                <ul>
+                                    <li>Chat</li>
+                                    <li>Email</li>
+                                    <li>Zoom</li>
+                                    <li>Phone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-pro-card">
+                        <div class="product-pro-heading">
+                            <img src="/assets/products/pro.png" alt="">
+                            <p class="poppins bold font24">Pro</p>
+                            <p class="popular-badge poppins font14 semibold">MOST POPULAR</p>
+                        </div>
+                        <p class="poppins bold font44" id="pro-price">$600</p>
+                        <p class="font16 poppins white ">Tailored for tax advisors committed to year-round planning and
+                            client advisory services.</p>
+                        <a href="#" class="primary-btn">GET STARTED</a>
+
+
+                        <div class="more-features-box">
+                            <h3>Everything in Essentials Plus:</h3>
+                            <div class="more-features">
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Unlimited Reports:</p>
+                                </div>
+                                <ul>
+                                    <li class="white">Proposals</li>
+                                    <li class="white">Presentations</li>
+                                    <li class="white">Cashflow Timeline</li>
+                                </ul>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>JAIne (The Best AI Tax Planning Tool!)</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Build Tax Plans Together with Priority
+                                        Support</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Tasks with Zapier Sync - Automate
+                                        Tax Planning</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Client Portal</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Client To-Do’s with Zapier Sync</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/white-check.png" alt="">
+                                    <p>Client Questionnaires</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+                    <div class="product-advanced-card">
+                        <div class="product-advanced-heading">
+                            <img src="/assets/products/advanced.png" alt="">
+                            <p class="poppins bold font24">Advanced</p>
+                        </div>
+                        <p class="poppins bold font44" id="advanced-price">$1497.00<span
+                                class="poppins normal grey font16" id="advanced-time">/month</span></p>
+                        <div>
+                            <p class="poppins skyblue grey font16">$2,994.00<span class="poppins grey font16">-one time
+                                    fee</span></p>
+                            <p class="font16 poppins grey">Perfect for tax advisors looking to step up their game and
+                                build
+                                closer client relationships. Get the advanced tools and
+                                personal guidance you need.</p>
+                        </div>
+
+                        <a href="#" class="primary-btn">GET STARTED</a>
+
+                        <div class="more-features-box">
+                            <h3>Everything in Pro Plus:</h3>
+                            <div class="more-features">
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>3 Monthly Live Sessions with
+                                        TaxPlanIQ Founder Jackie Meyer, CPA</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Referrals to Concierge Level Clientele
+                                        as Suited to Your Location + Fit</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Exclusive Invitations to Events - In
+                                        Person + Virtual - And a Private Chat</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Access to Online Learning Platform
+                                        to Review Tax Strategies</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Personal Access to Jackie Meyer via
+                                        Text and Quick Coaching Sessions</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>CPE Credits: Earn a Minimum of
+                                        36 CPE Credits</p>
+                                </div>
+                                <div class="extra-feature">
+                                    <img src="/assets/pricing/blue-check.png" alt="">
+                                    <p>Become a Certified Concierge Tax Advisor</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--STATS SECTION-->
+    <div class="container blue-gradient">
+        <div class="wrapper">
+            <div class="stats-section">
+                <div class="stat">
+                    <h2 class="white bold font46 poppins">$250M</h2>
+                    <p class=" white font20 poppins">in Tax Savings</p>
+                </div>
+                <div class="stat">
+                    <h2 class="white bold font46 poppins">$16,532</h2>
+                    <p class=" white font20 poppins">Average Tax Savings Per Client</p>
+                </div>
+                <div class="stat">
+                    <h2 class="white bold font46 poppins">25k</h2>
+                    <p class=" white font20 poppins">Tax payers rely on TaxPlanIQ for their tax savings</p>
+                </div>
+                <div class="stat">
+                    <h2 class="white bold font46 poppins">70%</h2>
+                    <p class="white font20 poppins">Time saved monthly (on average)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="video-popup" class="popup hidden">
+        <div class="popup-content">
+            <iframe id="youtube-video" width="100%" height="100%" src="" frameborder="0" allow="encrypted-media"
+                allowfullscreen>
+            </iframe>
+            <span id="close-popup" class="close-icon">✖</span>
+        </div>
+    </div>
+
+
+    <!--TESTIMONIALS-->
+    <div class="container testimonials-container" style="background-color: white;">
+        <div class="wrapper">
+            <div class="testimonials-section pricing-testimonial-section">
+                <div class="testimonials-heading">
+                    <h5 class="font16 poppins semibold skyblue textcenter">TESTIMONIALS</h5>
+                    <h2 class="font44 semibold textcenter">World Class Tax Advisors <br>
+                        Love Using TaxPlanIQ</h2>
+                    <p class="grey textcenter font20 poppins">See what they’re saying....</p>
+                </div>
+                <div class="main-testimonial">
+                    <div class="main-testimonial-image">
+                        <img src="assets/pricing/review-girl.png" alt="">
+                        <img src="assets/home/play-icon.png" alt="" id="pricingplaybtn"  class="main-testimonial-play play-button" >
+                    </div>
+                    <div class="main-testimonial-text">
+                        <img src="/assets/home/stars.png" alt="" width="30%">
+                        <p class="font40 poppins normal pricing-testimonial-p">"TaxPlanIQ has saved my clients millions of dollars! In the
+                            last 6 months we were able to charge $300,000 in new fees"</p>
+                        <h5 class="font24 poppins bold">Lisa Wells Cox</h5>
+                        <p class="font18 normal  grey">Anchor CPA Group</p>
+                    </div>
+                </div>
+                <div class="other-testimonials">
+                    <div class="testimonial">
+                        <p class="medium font20 poppins">"I became a CTC to get my tax planning processes in place, and
+                            when TaxPlanIQ came out, I said "thisis what I've been
+                            waiting for!" I've already sold five plans for $1,000 - $2,000 to existing clients and can't
+                            wait to create packages and
+                            continue selling them!"</p>
+                        <div class="testimonial-writer">
+                            <div class="testimonial-writer-profile">
+                                <div class="testimonial-writer-pic">
+                                    <img src="assets/home/testimonial-1.png" alt="">
+                                </div>
+                                <div class="testimonial-writer-info">
+                                    <h5 class="bold font18">Tiffany Johnson, CPA, CFP
+                                    </h5>
+                                    <p class="normal font14 opacity80">The Onyx Group - Santa Monica, CA</p>
+                                </div>
+                            </div>
+                            <div class="quote-mark">
+                                <img src="assets/home/quote.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="medium font20 poppins">“I just wanted to share a quick note with you regarding my
+                            first tax plan pitch using TaxplanIQ. The implementation fee
+                            istotal of $6250. Future years will be $3,500/year. I'm pretty happy as before I'd have just
+                            charged about $500- $1000.”</p>
+                        <div class="testimonial-writer">
+                            <div class="testimonial-writer-profile">
+                                <div class="testimonial-writer-pic">
+                                    <img src="assets/home/testimonial-2.png" alt="">
+                                </div>
+                                <div class="testimonial-writer-info">
+                                    <h5 class="bold font18">Natasha Dornbush, CPA</h5>
+                                    <p class="normal font14 opacity80">Auxilium Accounting Services - Fredericksburg, VA
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quote-mark">
+                                <img src="assets/home/quote.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="medium font20 poppins">"My client strategies have reached new heights of organization.
+                            I can effortlessly gauge the potential savings for a
+                            client with a fresh strategy and track the actual savings once implemented. The diverse ROI
+                            sheet presentations cater
+                            perfectly to both my clients and my team, streamlining communication and understanding. The
+                            checklists, distinguishing
+                            between internal tasks and tho...”</p>
+                        <div class="testimonial-writer">
+                            <div class="testimonial-writer-profile">
+                                <div class="testimonial-writer-pic">
+                                    <img src="assets/home/testimonial-3.png" alt="">
+                                </div>
+                                <div class="testimonial-writer-info">
+                                    <h5 class="bold font18">Kathleen Smith, CPA</h5>
+                                    <p class="normal font14 opacity80">Tax Planning and & Accounting -
+                                        Poughkeepsie, New York</p>
+                                </div>
+                            </div>
+                            <div class="quote-mark">
+                                <img src="assets/home/quote.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="medium font20 poppins">“I love that TaxPlanIQ has a LOT of resources about the
+                            individual strategies to help me determine if it'sapplicable to
+                            my client's situation. Then, it goes a step further with how to go about implementing the
+                            strategy.”</p>
+                        <div class="testimonial-writer">
+                            <div class="testimonial-writer-profile">
+                                <div class="testimonial-writer-pic">
+                                    <img src="assets/home/testimonial-4.png" alt="">
+                                </div>
+                                <div class="testimonial-writer-info">
+                                    <h5 class="bold font18">Rich Inglis, EA</h5>
+                                    <p class="normal font14 opacity80">Paradigm Tax Consulting - Brentwood, CA</p>
+                                </div>
+                            </div>
+                            <div class="quote-mark">
+                                <img src="assets/home/quote.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----MIDDLE CTA SECTION----->
+
+    <div class="container">
+        <div class="wrapper middle-cta-wrapper">
+            <div class="middle-cta-section">
+                <div class="middle-cta-text">
+                    <h2 class="semibold white font54 lh14">Ready to Become a Tax Planning Wizard in Just Minutes?</h2>
+                </div>
+                <div class="middle-cta-buttons">
+                    <a href="#" class="primary-btn">START FREE TRIAL</a>
+                    <a href="#" class="secondary-btn">GET A DEMO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------faq section------->
+
+
+
+    <div class="container faq-section-container">
+        <div class="wrapper">
+            <div class="faq-section">
+                <h2 class="font44 semibold textcenter">Frequently asked questions</h2>
+                <div class="faq-container">
+                    <div class="faq-box first-faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Are you a tax projection software?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins ">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Does the software read tax documents and suggest
+                                strategies?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Are the strategies and resources updated and in line
+                                with current tax laws and best practices?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Can TaxPlanIQ seamlessly integrate with existing
+                                software and tools I'm already using?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Is the cost of TaxPlanIQ justified by the value it
+                                offers?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">What kind of customer support is available?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                    <div class="faq-box" onclick="faqToggle(event)">
+                        <div class="faq-question">
+                            <img src="/assets/pricing/plus-circle.png" alt="" width="25px" class="plus-circle">
+                            <img src="/assets/pricing/minus-circle.png" alt="" width="25px" class="minus-circle">
+                            <p class="font18 semibold  poppins">Which plan is right for me?</p>
+                        </div>
+                        <p class="faq-answer font16 grey poppins">No, we are not a tax projection software- we are so
+                            much more than that! Think beyond just tax projections. TaxPlanIQ
+                            elevates your tax planning by emphasizing the three P's: Proposals, Project Management, and
+                            Professional Development.
+                            We're here to revolutionize your advisory engagements, potentially tripling or quadrupling
+                            your revenue. Join us and
+                            experience the difference in both profitability and client satisfaction!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!----NEWSLETTER SECTION------>
+
+    <div class="container  newsletter-container">
+        <div class="wrapper">
+            <div class="newsletter-section">
+                <h2 class=" textcenter semibold">Sign up for our newsletter</h2>
+                <p class=" grey textcenter font20 regular poppins">Be the first to know about releases and industry news
+                    and insights.</p>
+                <div class="input-container">
+                    <input type="text" placeholder="Enter your Email" class="poppins">
+                    <a href="#" class="primary-btn">SUBSCRIBE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------FOOTER SECTION----->
+
+    <div class="container footer-container">
+        <div class="wrapper middle-cta-wrapper">
+            <div class="footer-cta-section">
+                <div class="middle-cta-section footer-cta">
+                    <div class="middle-cta-text" style="width: 90%;">
+                        <h2 class="semibold white font40 lh15">TaxPlanIQ is now your all-encompassing platform for
+                            Live Tax Planning & Advisory Solutions!</h2>
+                    </div>
+                    <div class="middle-cta-buttons">
+                        <a href="#" class="primary-btn">START FREE TRIAL</a>
+                        <a href="#" class="secondary-btn">GET A DEMO</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer-section white">
+
+                <div class="main-footer-container">
+                    <div class="footer-logo-container">
+                        <img src="assets/home/footer-logo.png" alt="">
+                        <p class="poppins font16 lite opacity80 lh15">TaxPlanIQ is now your all-encompassing <br>
+                            platform for Live Tax
+                            Planning & Advisory <br> Solutions!
+                        </p>
+                    </div>
+                    <div class="footer-product">
+                        <h6>Product</h6>
+                        <a href="#">TaxPlanIQ</a>
+                        <a href="#">CCTA Masterclass</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="footer-company">
+                        <h6>Company</h6>
+                        <a href="#">About Us</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Events</a>
+                        <a href="#">Referral Program</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="footer-resources">
+                        <h6>Resources</h6>
+                        <a href="#">Customer Stories</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">FAQs</a>
+                    </div>
+
+                </div>
+                <hr class="footer-hr">
+                <div class="bottom-footer-container">
+                    <div class="policy-links">
+                        <p class="opacity50  font14">Copyright © 2023 TaxplanIQ. All Rights Reserved.</p>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#"><img src="assets/home/Linkedin.png" alt=""></a>
+                        <a href="#"><img src="assets/home/twitter.png" alt=""></a>
+                        <a href="#"><img src="assets/home/Facebook.png" alt=""></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
