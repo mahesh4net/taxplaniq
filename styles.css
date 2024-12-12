@@ -2725,6 +2725,27 @@ p,
   margin-bottom: 0.7rem;
 }
 
+/* credit-section  */
+
+.credit p{
+  text-align: left;
+}
+
+.credit p a{
+  color: white;
+  transition: all 0.3s;
+}
+
+.credit p a:hover{
+  transform: scale(1.1);
+
+}
+
+.credit p i{
+  color: red;
+}
+
+
 /*-----------------------------
 ----------REPONSIVE DESIGN------
 -----------------------------*/
@@ -3122,6 +3143,10 @@ p,
     width: 80%;
   }
 
+
+  .credit p{
+    text-align: center;
+  }
   /* product page */
 
   .product-benifits-section {
@@ -3413,6 +3438,10 @@ p,
 @media (max-width: 425px) {
   /* global styles */
 
+  .wrapper{
+    padding-inline: 15px !important;
+  }
+
   h1 {
     font-size: 1.8rem !important;
   }
@@ -3431,6 +3460,19 @@ p,
   .review-image-box {
     width: 70%;
   }
+
+  .review-details-box p{
+    font-size: 1.3rem;
+  }
+
+   .review-details-box .author h4, .review-details-box .author p{
+    font-size: 1.2rem !important;
+  }
+
+.logo{
+  width: 30% !important;
+}
+
 
   .features-section {
     text-align: left;
@@ -3462,7 +3504,7 @@ p,
   }
 
   .main-testimonial {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .main-testimonial-image {
@@ -3474,6 +3516,18 @@ p,
   .testimonial {
     padding: 0px;
   }
+
+  .main-testimonial-text .p:nth-of-type(1){
+    font-size: 1.3rem !important;
+  }
+
+  .overview-section .number-stats{
+    gap: 0.5rem;
+  }
+
+      .plan-stats, .clients-stats, .saving-stats, .published-stats {
+        width: calc(50% - 0.25rem);
+    }
 
   .middle-cta-section {
     padding: 1rem 1rem;
@@ -3525,6 +3579,10 @@ p,
 
   .rating {
     width: 35% !important;
+  }
+
+  .home-hero-container {
+    overflow-x: hidden;
   }
 
   .hero-cta {
@@ -3590,6 +3648,25 @@ p,
     font-size: 1.5rem;
   }
 
+  .product-gain, .product-savings-10 {
+    width: 90%;
+  }
+
+
+
+  .product-return-and-savings{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .product-return, .product-savings{
+    width: 100%;
+  }
+
+  .advisory-section img {
+    width: 70%;
+}
+
   .advisory-step {
     width: 70%;
   }
@@ -3603,7 +3680,11 @@ p,
   }
 
   .pdf-name p {
-    font-size: 14px !important;
+    font-size: 12px !important;
+  }
+
+  .workflow-todos-header p{
+    font-size: 1.1rem;
   }
 
   .template-section-details {
@@ -3687,11 +3768,15 @@ p,
   /* pricing page */
 
   .main-testimonial-text p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .main-testimonial-text h5 {
     font-size: 1.2rem;
+  }
+
+  .testimonial p{
+    font-size: 1.1rem;
   }
 
   .testimonial-writer-profile {
@@ -3712,10 +3797,19 @@ p,
     display: none;
   }
 
+  .faq-box {
+    padding: 0.8rem;
+}
+
   .pricing-head-circle {
     display: none;
   }
   /* about us  */
+
+  .award-box .last-logo{
+    width: 60% !important;
+  }
+
 
   .about-hero-right-img-box {
     flex-direction: column;
@@ -3730,7 +3824,7 @@ p,
   }
 
   .about-mission-section p {
-    text-align: justify;
+    text-align: center;
   }
 
   .our-story-section p {
@@ -3775,7 +3869,7 @@ p,
   /* home page */
 
   .review-image-box {
-    width: 80%;
+    width: 70% !important;
   }
 
   .ai-section-img-box {
@@ -3790,8 +3884,23 @@ p,
     width: 80%;
   }
 
-  /* products page */
 
+  /* products page */
+  .workflow-todos-header p{
+    font-size: 1rem;
+  }
+
+      .workflow-bg-circle {
+        transform: translate(-41%, -10%);
+    }
+
+        .integration-section {
+        width: 100%;
+    }
+
+    .middle-quote-section h2{
+      font-size: 1.3rem !important;
+    }
   /* resources page */
   .guide-section p,
   .guide-section h2 {
