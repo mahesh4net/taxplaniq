@@ -382,6 +382,7 @@ p,
 /*----------BUTTONS---------*/
 
 .primary-btn {
+  display: block;
   text-decoration: none;
   color: white;
   font-family: "Raleway";
@@ -405,6 +406,8 @@ p,
 }
 
 .secondary-btn {
+  display: block;
+
   text-decoration: none;
   max-width: fit-content;
   font-size: 1rem;
@@ -501,11 +504,21 @@ p,
   cursor: pointer;
 }
 
-.navbar-section .navbar-menu {
+.navbar-logo{
+  max-width: 12%;
+}
+
+.navbar-logo img{
+ width: 100% !important;
+ max-width: 100% !important;
+}
+
+.navbar-section .navbar-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.2rem;
+  list-style-type: none;
 }
 
 .navbar-section .navbar-menu a {
@@ -534,6 +547,15 @@ p,
   gap: 1rem;
 
   position: relative;
+}
+
+.menu-navbar-logo{
+  max-width: 15%;
+}
+
+.menu-navbar-logo img{
+  width: 100%;
+  max-width: 100%;
 }
 
 .mobile-navbar-header {
@@ -569,19 +591,24 @@ p,
   cursor: pointer;
 }
 
-.mobile-navbar-section .mobile-navbar-menu {
+.mobile-navbar-section .mobile-navbar-menu ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.2rem;
-  position: absolute;
+  list-style-type: none;
+}
+
+.mobile-navbar-section .mobile-navbar-menu{
+ position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
   z-index: 5;
   transition: all 0.2s ease-in-out;
-  padding-block: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: white;
 }
 
@@ -1332,11 +1359,23 @@ p,
 .footer-company,
 .footer-resources {
   width: calc(16.6% - 0.7rem);
+}
+
+.footer-product ul,
+.footer-company ul,
+.footer-resources ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   color: white;
+  list-style-type: none;
+  width: 100%;
+  
+
+
 }
+
+
 
 .footer-product h6,
 .footer-company h6,
@@ -1344,7 +1383,7 @@ p,
   font-size: 16px;
   font-weight: 400 !important;
   color: var(--grey);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   color: white;
   opacity: 0.6;
   font-family: poppins;
@@ -1388,11 +1427,16 @@ p,
 .policy-links {
   padding-block: 1.5rem;
   min-width: 60%;
-  display: flex;
+ 
+}
+
+.policy-links ul{
+   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
   color: white;
+  list-style-type: none;
 }
 
 .policy-links a {
@@ -1413,9 +1457,10 @@ p,
   color: var(--skyblue);
 }
 
-.socials {
+.socials ul {
   display: flex;
   gap: 1rem;
+  list-style-type: none;
 }
 
 .socials img {
@@ -3316,6 +3361,9 @@ p,
   }
 
   /* home page */
+  .menu-navbar-logo {
+    max-width: 17%;
+}
   /* products page */
   .head-analytics-section .overview-stats .number-stats,
   .head-analytics-section .overview-stats .chart-stats {
@@ -3432,6 +3480,13 @@ p,
   }
 }
 
+
+@media (max-width: 550px){
+  .menu-navbar-logo {
+    max-width: 20%;
+}
+}
+
 @media (max-width: 425px) {
   /* global styles */
 
@@ -3447,7 +3502,12 @@ p,
     font-size: 1.8rem !important;
   }
   /* home page */
+.menu-navbar-logo {
+    max-width: 28%;
+}
+
   .hero-image {
+  
     width: 100vw;
   }
 
@@ -3874,6 +3934,10 @@ p,
 
   /* home page */
 
+  .menu-navbar-logo {
+    max-width: 32%;
+}
+
   .review-image-box {
     width: 70% !important;
   }
@@ -3924,27 +3988,19 @@ p,
   .video-tutorial-wrapper {
     padding-inline: 0px;
   }
-  /* pricing page */
-
-  /* about us  */
 }
 
 @media (max-width: 320px) {
-  /* global styles */
+
   :root {
     font-size: 12px;
   }
 
+    .menu-navbar-logo {
+    max-width: 35%;
+}
   .middle-cta-section h2 {
     font-size: 1.5rem;
   }
-  /* home page */
 
-  /* products page */
-
-  /* resources page */
-
-  /* pricing page */
-
-  /* about us  */
 }
