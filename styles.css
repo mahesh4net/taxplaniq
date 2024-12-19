@@ -504,13 +504,13 @@ p,
   cursor: pointer;
 }
 
-.navbar-logo{
+.navbar-logo {
   max-width: 12%;
 }
 
-.navbar-logo img{
- width: 100% !important;
- max-width: 100% !important;
+.navbar-logo img {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .navbar-section .navbar-menu ul {
@@ -549,11 +549,11 @@ p,
   position: relative;
 }
 
-.menu-navbar-logo{
+.menu-navbar-logo {
   max-width: 15%;
 }
 
-.menu-navbar-logo img{
+.menu-navbar-logo img {
   width: 100%;
   max-width: 100%;
 }
@@ -591,7 +591,7 @@ p,
   cursor: pointer;
 }
 
-.mobile-navbar-section .mobile-navbar-menu ul{
+.mobile-navbar-section .mobile-navbar-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -600,8 +600,8 @@ p,
   list-style-type: none;
 }
 
-.mobile-navbar-section .mobile-navbar-menu{
- position: absolute;
+.mobile-navbar-section .mobile-navbar-menu {
+  position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
@@ -1370,12 +1370,7 @@ p,
   color: white;
   list-style-type: none;
   width: 100%;
-  
-
-
 }
-
-
 
 .footer-product h6,
 .footer-company h6,
@@ -1427,11 +1422,10 @@ p,
 .policy-links {
   padding-block: 1.5rem;
   min-width: 60%;
- 
 }
 
-.policy-links ul{
-   display: flex;
+.policy-links ul {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
@@ -3356,6 +3350,11 @@ p,
 
 @media (max-width: 768px) {
   /* global styles */
+
+ .policy-links ul {
+    flex-direction: column !important;
+  }
+
   h1 {
     font-size: 2.8rem !important;
   }
@@ -3363,7 +3362,7 @@ p,
   /* home page */
   .menu-navbar-logo {
     max-width: 17%;
-}
+  }
   /* products page */
   .head-analytics-section .overview-stats .number-stats,
   .head-analytics-section .overview-stats .chart-stats {
@@ -3480,11 +3479,10 @@ p,
   }
 }
 
-
-@media (max-width: 550px){
+@media (max-width: 550px) {
   .menu-navbar-logo {
     max-width: 20%;
-}
+  }
 }
 
 @media (max-width: 425px) {
@@ -3501,13 +3499,15 @@ p,
   h2 {
     font-size: 1.8rem !important;
   }
+
+ 
+
   /* home page */
-.menu-navbar-logo {
+  .menu-navbar-logo {
     max-width: 28%;
-}
+  }
 
   .hero-image {
-  
     width: 100vw;
   }
 
@@ -3936,7 +3936,7 @@ p,
 
   .menu-navbar-logo {
     max-width: 32%;
-}
+  }
 
   .review-image-box {
     width: 70% !important;
@@ -3991,16 +3991,14 @@ p,
 }
 
 @media (max-width: 320px) {
-
   :root {
     font-size: 12px;
   }
 
-    .menu-navbar-logo {
+  .menu-navbar-logo {
     max-width: 35%;
-}
+  }
   .middle-cta-section h2 {
     font-size: 1.5rem;
   }
-
 }
