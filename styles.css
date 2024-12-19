@@ -3351,7 +3351,7 @@ p,
 @media (max-width: 768px) {
   /* global styles */
 
- .policy-links ul {
+  .policy-links ul {
     flex-direction: column !important;
   }
 
@@ -3500,8 +3500,6 @@ p,
     font-size: 1.8rem !important;
   }
 
- 
-
   /* home page */
   .menu-navbar-logo {
     max-width: 28%;
@@ -3628,8 +3626,8 @@ p,
     text-align: center;
   }
 
-  .policy-links {
-    flex-direction: column;
+  .policy-links ul {
+    flex-direction: column !important;
     align-items: center;
   }
 
@@ -3670,8 +3668,8 @@ p,
     border-radius: 1rem;
   }
 
-  .policy-links {
-    flex-direction: column-reverse;
+  .policy-links ul {
+    flex-direction: column-reverse !important;
   }
 
   /* products page */
